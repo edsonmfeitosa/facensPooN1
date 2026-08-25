@@ -34,6 +34,15 @@ public class Tipos {
         System.out.println(n1);
         System.out.println(n2);
         
+        //exemplos com Wrapper
+        float m1 = 10.2F;
+        String teste = n2.toString();
+        int teste2 = Integer.parseInt("10");
+        
+        //Booleano
+        boolean b = true; //false
+        System.out.println(b);
+        System.out.println(n1 == n2);
         
         
         

@@ -17,4 +17,20 @@ public class Pessoa {
     public String responderONome(){
         return "Meu nome é"+this.nome;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCorDosOlhos() {
+        return corDosOlhos;
+    }
+
+    public void setCorDosOlhos(String corDosOlhos) {
+        this.corDosOlhos = corDosOlhos;
+    }
 }
