@@ -75,6 +75,9 @@ public class AulaListas {
                 System.out.println("---------> "+
                         p.getNome() + " Valor: "+ p.getValor());
             }
+            Produto prod = new Produto("caderno", 
+                    10.5, 1d);
+            fornecedores.get(0).setProduto(prod);
         }
     }   
 }
