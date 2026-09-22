@@ -54,7 +54,17 @@ public class Exercicio1 {
                     
                     break;
                 case 3:
-                    System.out.println("3");
+                    String RAConsulta;
+                    System.out.println("Digite o RA do aluno que deseja excluir.");
+                    RAConsulta = tec.nextLine();
+                    for (Curso curso : cursos) {
+                        for (int i = 0; i < curso.getAlunos().size(); i++) {
+                            if (RAConsulta.equals(curso.getAlunos().get(i).getRa())) {
+                                curso.getAlunos().remove(i);
+                            }
+                        }
+                    }
+                    
                     break;
                 case 4:
                     for (Curso curso : cursos) {

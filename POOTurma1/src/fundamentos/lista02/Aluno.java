@@ -31,8 +31,8 @@ public class Aluno {
         this.nome = nome;
     }
     public String imprimir(){
-        return "Nome: "+this.nome +
-                "\nRA: " + this.ra;
+        return "\n--->Nome: "+this.nome +
+                "\n--->RA: " + this.ra;
     }
 
     @Override

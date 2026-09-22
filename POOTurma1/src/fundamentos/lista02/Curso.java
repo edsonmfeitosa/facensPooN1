@@ -25,7 +25,7 @@ public class Curso {
         alunos.remove(index);
     }
     public String imprimir(){
-        return "Cod.: "+ codigo +
+        return "\nCod.: "+ codigo +
                 "\nNome: "+nome +
                 "\nCarga horária: "+ cargaHoraria;
     }
