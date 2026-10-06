@@ -2,16 +2,17 @@
 package fundamentos.associacao;
 
 public class Automovel {
-    private String modelo;
+    //private String modelo;
     private String cor;
-    private int ano;
+    protected int ano;
     private Motor motor;
     private Pessoa dono;
     
-    public Automovel(){
+    public Automovel(String cor){
+        this.cor = cor;
         motor = new Motor(this);
     }
-
+/*
     public String getModelo() {
         return modelo;
     }
@@ -19,7 +20,7 @@ public class Automovel {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-
+*/
     public String getCor() {
         return cor;
     }
@@ -59,7 +60,7 @@ public class Automovel {
 
     @Override
     public String toString() {
-        return "Automovel{" + "modelo=" + modelo 
+        return "Automovel{"  
                 + ", cor=" + cor + ", ano=" + ano 
                 + ", motor=" + motor.getFatorPotencia() + '}';
     }
