@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import jdbc.factory.ConnectionFactory;
 import jdbc.model.Cliente;
 
-public class ClienteDao {
+public class ClienteDao implements IClienteDao{
     private Connection conexao;
     
     public ClienteDao(){
